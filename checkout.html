@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="desprition" content="Site de vente de vêtements et d'accessoires de poupée BJD Ball jointed doll tricoté et fait main.">
+    <link rel="alternate" href="#" hreflang="fr-fr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Llewelynn's Knit, site de vente de vêtements fait main pour BJD</title>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/9cd224d2fe.js" crossorigin="anonymous"></script>
+
+    <img src="src/img/fond-couleur.jpg" alt="image de fond du site representant un les mailles d'un tricot en gros plan" id="fond">
+
+    <header>
+        <nav>
+            <ul>
+                <div id="main">
+                    <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="landing-page.html">New Arrivals</a> 
+                    <button class="accordion"><a href="#">Clothes</a></button>
+                    <div class="panel">
+                        <a href="product-list.html">Top</a>
+                        <a href="product-list.html">Sweater</a>
+                        <a href="product-list.html">Trousers</a>
+                        <a href="product-list.html">Skirt & Dresses</a>
+                        <a href="product-list.html">Asian</a>
+                    </div>
+                    <button class="accordion"><a href="#">Accessories</a></button>
+                    <div class="panel">
+                        <a href="product-list.html">Hat & Scarves</a>
+                        <a href="product-list.html">Gloves & Socks</a>
+                        <a href="product-list.html">Belts</a>
+                        <a href="product-list.html">Jewellery</a>
+        
+                    </div>
+                    <a href="landing-page.html">Sales</a>
+                    <a href="Index.html">About Us</a>
+                    <a href="#">FAQ</a>
+                    <a href="contact.html">Contact Us</a>
+                    </div>
+                   
+                    <span onclick="openNav()">
+                        <div class="burger">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                    </span>
+                </div>      
+               
+                <li>
+                    <a href="Index.html"><h1>Llewelynn's Knit</h1></a>
+                </li>
+                <li>
+                   <a href="login.html"> Welcome User, </a>
+                </li>
+                <li>
+                   <a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a>
+                </li>
+                <li>
+                   <a href="#"><input type="text" placeholder="Search.."><i class="fas fa-search"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="new-small" alt="emplacement des nouveautés du sites">
+
+            <h1>New Arrivals</h1>
+
+            <div id="arrivals_small">
+                <div>
+                    <a href="landing-page.html">
+                        <img src="src/img/sweater-square.jpg" alt="image d'une poupée BJD portant un sweater tricoté rouge et blanc" id="new_img_small">
+                        <h2>Sweater</h2>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="landing-page.html">
+                        <h2>Accessories</h2>
+                        <img src="src/img/collier-square.jpg" alt="image d'un colliers de perles noires taille poupée BJD" id="new_img_small">
+                    </a>
+                </div>
+
+                <div>
+                    <a href="landing-page.html">
+                        <img src="src/img/trouser-square.jpg" alt="image d'une poupée BJD portant une salopette noire appuyé contre un arbre" id="new_img_small">
+                        <h2>Trousers</h2>
+                    </a>
+                </div>
+            
+                <div>
+                    <a href="landing-page.html">
+                        <h2>Hats & Scarves</h2>
+                        <img src="src/img/hats-square.jpg" alt="image d'une poupée BJD portant un bonnet et une echarpe tricoté assorties" id="new_img_small">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="payment" id="payment">
+            <h2>Choose your payment method</h2>
+
+                <ul class="method">
+                    <li class="payment_logo"><i class="fab fa-paypal"></i></li>
+                    <li class="payment_logo"><i class="fab fa-cc-visa"></i></li>
+                    <li class="payment_logo"><i class="fab fa-cc-mastercard"></i></li>
+                    <li class="payment_logo"><i class="fab fa-cc-amex"></i></li>
+                    <li class="payment_logo"><i class="fab fa-google-pay"></i></li>
+                    <li class="payment_logo"><i class="fab fa-apple-pay"></i></li>
+                    <li class="payment_logo"><i class="fab fa-amazon-pay"></i></li>
+                    <li class="payment_logo"><button id="gift">Gift Card</button></li>
+                </ul>
+
+            <h2>Card Information</h2>
+            
+                <div class="form_card">
+                    <form>
+                        <div id="">
+                            <legend><h3></h3></legend>
+                        </div>
+                        <div id="form_right">
+                            <label class="infos" name="name" class="id="nom" for="name">Name on the Card *</label>
+                            <input type="text" placeholder="ex : De Montmirail">
+
+                            <span>Card Number:</span> <input placeholder="0125 6780 4567 9909">
+
+                            <label name="Expiry date" id="ccv" for="date">Expiry date:</label> <input placeholder="YY/MM">
+
+                            <Label name="ccv" id="ccv" for="ccv">CVV:</Label><input id="cvv">
+
+                            <div id="uno">
+                                <input type="checkbox" id="save_card" class="ckeckbox"> <label for="save_card">Save card details to wallet</label>
+                            </div>
+                        </div>
+                    </form>
+
+            <h2>Shippement method</h2>
+
+                <div class="ship_choice">
+                    <form class="shipping">
+
+                        <div id="uno">
+                            <input type="radio" class="ship" id="chronopost" name="ship" value="Chronopost">
+                            <div id="wtf">
+                                <label for="male">Chronopost </label>
+                                <div class="price">-- €</div>
+                            </div>
+                        </div>
+
+                        <div id="uno">
+                            <input type="radio" class="ship"  id="dhl" name="ship" value="dhl">
+                            <div id="wtf">
+                                <label for="dhl">DHL</label>
+                                <div class="price">-- €</div>
+                            </div>
+                        </div>
+
+                        <div id="uno">
+                            <input type="radio" class="ship"  id="letter" name="ship" value="letter">
+                            <div id="wtf">
+                                <label for="letter">Paper Letter</label>
+                                <div class="price">-- €</div>
+                            </div>
+                        </div>
+
+                        <div id="uno">
+                            <input type="radio" class="ship"  id=other" name="ship" value="fedex">
+                            <div id="wtf">
+                                <label for="fedex">FeDex</label>
+                                <div class="price">-- €</div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            
+            <h2>Shippement & billing adresse</h2>
+            
+            <form>
+                <label class="infos" name="name" class="id="nom" for="name">Name *</label>
+                <input type="text" placeholder="ex : De Montmirail">
+
+                <label name="firstname" id="prenom" for="prenom">First Name *</label>
+                <input type="text" placeholder="ex : Mellissandre">
+
+                <label name="Adresse" id="adresse" for="adresse"> Adresse part 1</label>
+                <input type="text" placeholder="ex : Residence...">
+
+                <label name="Adresse" id="adresse" for="adresse"> Adresse part 2</label>
+                <input type="text" placeholder="ex : 23 rue de la boetie">
+
+                <label name="Code_post" id="Code_post" for="Code_post">Code Postal</label>
+                <input type="text" placeholder="ex : 33000">
+
+                <label name="Country" id="Country" for="Country"> Country</label>
+                <input type="text" placeholder="ex : France">
+                
+                <label name="telephone" id="telephone" for="Telephone">Telephone</label>
+                <input type="text" placeholder="ex : 0700000000">
+
+                <label for="mail">E-mail *</label>
+                <input type="text" placeholder="ex : meli.monmit@gmail.com">
+            </form>
+
+            <div class="order">
+                <h2>Order Summary</h2>
+
+                <div id="duo">
+                    <div id="wtf">
+                        <p>Order Value</p> <div class="price">-- €</div>
+                    </div>
+
+                    <div id="wtf">
+                        <p>shipping Cost</p> <div class="price">-- €</div>
+                    </div>
+                    
+                    <div id="wtf">
+                        <label for="discount">Do you have a Discount Code ?</label> 
+                        <input id="price" class="price" type="text" placeholder="ex : 0700000000">
+                    </div>
+
+                    <div id="wtf">
+                        <p>Taxes</p> <div class="price">-- €</div>
+                    </div>
+                </div>
+
+                <div class="total">
+                    <div id="wth">
+                    <p>Total price :</p> <div class="price">--€</div>
+                    </div>
+                
+                    <a href="#"><input class="bouton" type="submit" value="Your Cart"></a>
+                    <a href="#"><input class="bouton" type="submit" value="Place Order"></a>
+                </div>
+            </div>
+
+            </section>
+    </main>
+    
+    <footer>
+        <hr>
+        <div id="socials">
+            <ul> <!-- jte l'ai refait avec les font-awesome - tu finiras -->
+                <!-- https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free -->
+                <li><a href="#"><i class="fab fa-tumblr"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter-square"></i></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                <li><a href="#"><i class="fab fa-dribbble-square"></i></a></li>
+            </ul>
+        </div>
+        <hr>
+        <img src="src/img/logo-CZH-blanc.png" alt="logo de la marque Czeriah's Design web deisgner et créatrice du site et des objet tricoté en vente dessus (parce que il faut savoir se diversifier dans la vie)">
+        <ul id="stuff">
+            <li><a href="#" title="">Terms & Conditions</a></li>
+            <li><a href="#" title="">Copyright Czeriah's Design 2021</a></li>
+            <li><a href="#" title="">Privacy Policies</a></li>
+            <li><a href="#" title="">FAQ</a></li>
+        </ul>
+    </footer>
+
+    <script src="src/js/script.js"></script>
+</body>
+</html>

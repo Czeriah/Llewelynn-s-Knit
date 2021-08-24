@@ -1,0 +1,1011 @@
+/*----------------------------------------------------------------
+---------------------------- FONTS -------------------------------
+----------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+/*----------------------------------------------------------------
+------------------------    VARIABLES  ---------------------------
+----------------------------------------------------------------*/
+
+:root {
+    --font-size:1rem;
+}
+
+/*----------------------------------------------------------------
+-------------------------- RESET CSS ----------------------------
+----------------------------------------------------------------*/
+
+* {
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+#icon {
+    width:1.5em;
+    height:auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+#checkbox {
+    margin:0;
+    padding:0;
+    width: fit-content;
+}
+
+/*----------------------------------------------------------------
+----------------------------- BASIC ------------------------------
+----------------------------------------------------------------*/
+
+body {
+    font-size: var(--font-size);
+    font-family: 'Merriweather', serif;
+    color:#494949;
+}
+
+h1, h2, h3 {
+    font-family: 'Kaushan Script', cursive;
+}
+
+#fond {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    z-index: -100;
+}
+
+/* unvisited link */
+a:link {
+    color: #494949;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: #494949;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #494949;
+  }
+  
+  /* selected link */
+  a:active {
+    color: #494949;
+  }
+
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color:#ffffff;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #ffffff;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #ffffff;
+  }
+
+
+  main, nav ul, form, footer, .box, .about_us, .newsletter, .payment, .method, .ship_choice, .account, .total, .account ul, .account li a i, .log, .btn_logs, .another, .check, .countainer, .inspi, .cadre, .cadre article, .total2, .again,  #arrivals, #arrivals_small, #uno, #socials ul, #socials, #form, #news_txt, #form_bottom, #form_right, #form_left, #form_top, #wtf, #wth, #card, #login_media, #title, #social_co, #create_list, #plus_moins, #plus_moins2, #arg, #again_total, #bouton_panier, #cadre, #article, #article_left, #article_right, #taemin, #stuff, .list {
+      display: flex;
+  }
+
+  #article, #plus_moins2, .countainer, .account, #uno, #stuff {
+      flex-direction: row;
+  }
+
+ main, footer, form, .box, .newsletter, .ship_choice, .payment, .another, .check, .countainer, .cadre, .btn_logs, #news_txt, #form_right, #form_left, #form_top, #card, #title, #social_co, #create_list, #plus_moins, #article_left, #article_right {
+    flex-direction:column;
+    }
+
+main, form, .cadre article, .log, .payment, .account, .account ul, #arrivals, #arrivals_small, #stuff, #form_bottom, #form_right {
+    justify-content: space-evenly;
+}
+
+article, nav, nav ul, nav, footer, #icon, .method, .again, .total, .total2, .btn_logs, .container, .cadre, #wth, #uno, #wtf, #article, #login_media, #create_list, #plus_moins, #again_total, #plus_moins2,
+#bouton_panier { 
+    align-items: center;
+}
+
+/*------------------------------------
+----------------------------- HEADER---------------------------
+----------------------------------------------*/
+
+
+ /* ----------------------- BURGER ------------------------ */
+
+ .burger {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  /*--------------------------SIDEBAR-------------------------*/
+
+  /* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #4B3428; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    font-family: 'Merriweather', serif;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    text-align: left;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  /*--------------------------accordeon----------------------*/
+
+  /* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    font-family: 'Merriweather', serif;;
+    background-color: #4B3428;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #4B3428;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: #4B3428;
+    display: none;
+    overflow: hidden;
+  }
+
+  .panel a {
+      font-size: 1em;
+      text-align: right;
+  }
+
+ /* ------------------ NAV BAR ------------------------- */
+
+nav { 
+    background-color: #4B3428;
+    color: #ffffff;
+    width: auto;
+    height : 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+nav ul {
+    text-align: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+nav #icon {
+    padding-right:5px;
+}
+
+nav ul li h1 {
+    font-size: 1.5em;
+}
+
+/* unvisited link */
+nav a:link {
+    color: #ffffff;
+  }
+  
+  /* visited link */
+nav a:visited {
+    color: #d8d4d4;
+  }
+  
+  /* mouse over link */
+nav a:hover {
+    color: #b1aeae;
+  }
+  
+  /* selected link */
+nav a:active {
+    color: #525151;
+  }
+/*  COMMENT FAIRE MARCHER LE HOVER BOUTON ???
+  input .bouton::hover{
+      background-color: #6D5A50;
+  } */
+
+/*----------------------------------------------------------------
+----------------------------- MAIN ---------------------------
+----------------------------------------------------------------*/
+/* ----------------- NEWS ARRIVAL -----------------------------
+----------------------------------------------------------------*/
+
+
+#new {
+    background-image: url(../img/new-arrival-fond-fil.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#new h1 {
+    font-size: 4em;
+    padding: 4% 0% 0% 10%;
+}
+
+#new_img {
+    border-radius: 20px;
+    size:90%;
+}
+
+#arrivals {
+    padding-bottom: 40px;
+    padding-top: 30px;
+}
+
+#arrivals h2{
+    text-align: center;
+    font-size: 2.5em;
+    padding: 5px 5px 5px 5px;
+}
+
+
+/* --------------------- */
+
+#new-small {
+    background-image: url(../img/new-arrival-fond-small-fil.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#new-small h1 {
+    font-size: 4em;
+    padding: 4% 0% 0% 10%;
+}
+
+#new_img_small {
+    border-radius: 20px;
+    width: 125px;
+    text-align: center;
+}
+
+#arrivals_small {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#arrivals_small h2{
+    text-align: center;
+    font-size: 2em;
+}
+
+.box {
+    justify-content: center;
+}
+/*----------------------------------------------------------------
+-----------------------------About us---------------------------
+----------------------------------------------------------------*/
+
+#about_us{
+    font-size: 3em;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.about_us {
+    margin: 60px auto 60px 15%;
+    gap: 20px;
+    width: 70%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about_us article {
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin: 20px;
+    border-radius: 20px;
+    width: 60%;
+    text-align: center;
+}
+
+article p{
+    padding: 5px 35px 20px 35px;
+}
+
+.about_us h2 {
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+/* Trouver comment faire que l'image reste de la bonne taille !! */
+
+
+/*-------------------------------------------------------------
+------------------------ Newsletter ------------------------
+-------------------------------------------------------------*/
+
+.newsletter {
+    background-image: url(../img/newsletter-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    border-radius:20px;
+    width: 70%;
+    height: 345px;
+    margin-left: 15%;
+    margin-bottom: 30px;
+}
+
+#part1 {
+    font-size: 3.5em;
+    padding-left: 45%;
+    padding-top: 0.2em;
+}
+
+#part2 {
+    font-size: 4.5em;
+    padding-left: 70%;
+}
+
+#news_txt p {
+    padding: 20px;
+    margin-left: 50%;
+}
+
+input {
+    width: 300px;
+    height:30px;
+    border-radius:10px;
+    border: solid 2px #ffffff;
+    opacity:70%;
+    margin-right: 10px;
+}
+
+.newsletter i {
+    color: #ffffff;
+    font-size: 1.5em;
+}
+
+#news_txt {
+    color: #ffffff;
+    justify-content: space-around;
+}
+
+#newsletter {
+    padding-left: 60%;
+}
+/*----------------------------------------------------------------
+----------------------------- Contact Us ------------------------
+----------------------------------------------------------------*/
+.contact h2 {
+    font-size: 3em;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+form {
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin: 0% 15% 6% 15%;
+    padding: 2.5em;
+    gap: 10px;
+}
+
+textarea {
+    width: 300px;
+    height:200px;
+    border-radius:10px;
+    border: solid 2px #ffffff;
+    opacity:70%;
+}
+
+#form_bottom {
+    flex-wrap: wrap;
+}
+
+#form_top {
+    gap: 0.5em;
+    padding-bottom: 35px;
+    margin: 0% 0% 0% 13%;}
+
+#form_right {
+    row-gap: 11px;
+}
+
+#form_left {
+    row-gap: 10px;
+}
+
+input.bouton {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.5em;
+    background-color: #4B3428;
+    color: #ffffff;
+    height: 41px;
+    width: 135px;
+    border: none;
+    opacity: 100%;
+}
+
+#bouton {
+    justify-content: center;
+}
+/*----------------------------------------------------------------
+----------------------------- Footer---------------------------
+----------------------------------------------------------------*/
+
+
+footer {
+    background-color: #4B3428;
+    border-radius: 20px 20px 0 0;
+    color: #ffffff;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+footer hr {
+    border: solid 2px #ffffff;
+    width: 150px;
+    margin: 5px auto;
+}
+
+footer img {
+    margin: 30px auto;
+    width: 80px;
+    height: auto;
+}
+
+#socials {
+    width: fit-content;
+    padding: 15px 0px;
+}
+
+#socials ul {
+    gap: 30px;
+}
+
+#socials li a i {
+    color: #ffffff;
+    font-size: 1.5em;
+    transition: all .3s;
+}
+
+#socials li a i:hover {
+    color: peachpuff;
+    transform: scale(1.3); /* augmente de taille de 130% */
+}
+
+#stuff {
+    width:100%;
+}
+
+#stuff li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#stuff li a:hover {
+    text-decoration: underline;
+}
+
+
+/*--------------------------------------------------------
+------------------ Formulaires -----------------
+--------------------------------------------------------*/
+
+
+.payment h2 {
+    font-size: 3em;
+    text-align: center;
+    padding: 20px;
+}
+.payment {
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin: 4% 15% 6% 15%;
+    padding: 2.5em;
+}
+
+.payment_logo i {
+    font-size: 2em;
+    padding: 0px 20px 0px 20px;
+    color: #4B3428;
+}
+
+#gift {
+    background-color: #4B3428;
+    color: #ffffff;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1em;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+}
+
+.method {
+    padding: 2em 0em 2em 0em;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: 14%;
+}
+
+.form_card {
+    padding :0;
+    margin: 0;
+}
+
+.ship_choice{
+    justify-items: center;
+    
+}
+
+.ship {
+    width: 1em;
+}
+
+.price {
+    background-color: #4B3428;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding:5px;
+}
+
+#price {
+    padding: 0;
+    margin: 0;
+    background-color: #4B3428;
+}
+
+#wtf{
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 0px 5px 0px;
+}
+
+form .shipping {
+    gap: 10px;
+}
+
+#duo {
+    display: block;
+    margin-right: auto;
+    margin-left: 15%;
+    background-color: #ffffff;
+    opacity: 80%;
+    border-radius: 20px;
+    color: #494949;
+    width: 70%;
+    padding: 30px;
+    gap:10px;
+}
+
+.total {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+    margin: 60px auto 0px 146px;
+    row-gap: 40px;
+}
+
+#wth {
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 135px 0 135px;
+    padding: 15px 15px 15px 15px;
+    background-color: #ffffff;
+    opacity: 80%;
+    border-radius: 10px;
+}
+
+.total #bouton {
+    background-color: #4B3428;
+    color: #ffffff;
+    font-family: 'Kaushan Script', cursive;
+}
+
+/*--------------------------------------------------------
+------------------ Account  -----------------
+--------------------------------------------------------*/
+
+#card {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 70%;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin: 20px;
+    border-radius: 20px;
+    margin-left: 14%;
+    margin-right: auto;
+}
+
+.account {
+    padding: 25px;
+    column-gap: 40px;
+    }
+
+#img_account img{
+    border-radius: 20px;
+}
+
+.account li a i {
+    justify-content: center;
+    color: #ffffff;
+    font-size: 1.5em;
+    gap: 10px;
+}
+
+#login_media {
+    background-color: #4B3428;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+}
+
+.log {
+    background-color: #4B3428;
+    color: #ffffff;
+    font-family: 'Kaushan Script', cursive;
+    border-radius: 10px;
+    width: 280px;
+    height: auto;
+    padding: 10px;
+    align-items: baseline;
+}
+
+.log p {
+    font-family: 'Merriweather', serif;
+}
+
+.btn_logs {
+    gap: 15px;
+    padding: 20px;
+}
+
+.account #form_right p {
+    font-size: 0.9em;
+    text-align: center;
+}
+
+#title {
+    padding: 10px;
+}
+
+#A {
+    font-size: 2em;
+    padding-right: 155px;
+}
+
+#B {
+    text-align: right;
+    font-size: 1em;
+    padding-left: 75px;
+    margin-top: -15px;
+}
+
+#social_co {
+    padding: 20px;
+    gap: 20px;
+}
+
+#create_list {
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 0px 5px 0px;
+    padding: 10px;
+    gap: 25px;
+}
+
+input#create_acc {
+    padding: 20px;
+}
+
+.another {
+    padding-bottom: 20px;
+}
+
+.log {
+    border: none;
+}
+
+.check {
+    padding-left: 100px;
+}
+
+.container { 
+    gap: 15px;
+}
+
+/*--------------------------------------------------------
+------------------ CART  -----------------
+--------------------------------------------------------*/
+
+/*-------------------- PANIER--------------------------*/ 
+
+.inspi {
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.cadre {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 20px;
+}
+
+#panier {
+    width: 70%;
+    margin: 50px 50px 50px 50px;
+}
+
+#plus_moins {
+    gap: 10px;
+}
+
+.produit {
+    border-radius: 20px;
+    width: 200px;
+}
+
+#plus_moins ul li input {
+    width: 33px;
+    margin: 0;
+}
+
+.product_line {
+    margin: 20px 0px 20px 0px;
+}
+
+
+/*AJOUTER LE JAVASCRIPT PETIT COEUR CLIQUABLE
+ <i class="fas fa-heart"></i>       */
+
+/*------------------ SIDEBAR ORDER -----------------------*/
+
+.inspi h1{
+    font-size: 2.5em;
+    text-align: center;
+    padding: 20px;
+}
+
+#sidebar {
+    width: 30%;
+    margin: 50px 50px 50px 50px;
+}
+
+#trio {
+    display: block;
+    margin-right: auto;
+    margin-left: 10%;
+    background-color: #ffffff;
+    opacity: 80%;
+    border-radius: 20px;
+    color: #494949;
+    width: 80%;
+    padding: 30px;
+    gap:10px;
+}
+
+.total2 {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+    margin: 20px auto 30px 65px;
+    row-gap: 40px;
+}
+
+.again {
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 0px 5px 0px;
+}
+
+#again_total{
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 0px 5px 0px;
+}
+
+.total2 #bouton {
+    background-color: #4B3428;
+    color: #ffffff;
+    font-family: 'Kaushan Script', cursive;
+    margin-bottom:40px;
+}
+
+#price-cart {
+    width: 100px;
+    margin: 0;
+}
+
+#bouton_panier .bouton {
+    width: 225px;
+    height: 50px;
+}
+
+#bouton_panier {
+    justify-content: center;
+    column-gap: 50px;
+    padding-bottom: 50px;
+}
+
+
+/*--------------------  Articles ------------------*/
+
+#product_name {
+    text-align: center;
+    font-size: 4em;
+    padding-top: 40px;
+}
+
+#cadre {
+    justify-content: center;
+    width: 80%;
+    margin-left: 9%;
+    margin-right: auto;
+}
+
+section#article {
+    padding: 50px;
+}
+
+#article_left {
+    width :50%;
+    }
+
+#article_right {
+    gap:50px;
+}
+
+#article_right .price {
+    padding : 15px;
+    font-size: 1.5em;
+}
+
+#plus_moins2 {
+    gap: 10px;
+    padding: 20px;
+}
+
+#plus_moins2 input{
+    width:40px;
+}
+
+#taemin .bouton{
+    width: 200px;
+}
+
+#article_left .produit {
+    width:400px;
+    height: auto;
+}
+
+.cadre hr {
+    border: solid 2px #ffffff;
+    width: 500px;
+    margin: 5px auto;
+    padding: 0px;
+}
+
+.img_produit {
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.produit_large {
+    border-radius: 20px;
+    margin: 10px;
+}
+
+/*--------------------------------------------------------------
+--------------------------  Landing Page ----------------------
+-------------------------------------------------------------*/
+
+.list {
+    justify-content: center;
+    padding: 50px;
+    gap: 20px;
+}
+
+/*--------------------------------------------------------------
+--------------------------  Product List ----------------------
+-------------------------------------------------------------*/
+
+.product_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:40px;
+    padding: 50px;
+    margin-left: 10px;
+}
+
+.product_list img {
+    width: 250px;
+}
